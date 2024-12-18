@@ -39,9 +39,9 @@ const columns: ColumnDef<Payment>[] = [
       return (
         <div
           className={cn("font-medium w-fit px-4 py-2 rounded-lg", {
-            "bg-red-200": row.getValue("status") === "Pending",
-            "bg-orange-200": row.getValue("status") === "Processing",
-            "bg-green-200": row.getValue("status") === "Completed"
+            "bg-red-400": row.getValue("status") === "Pending",
+            "bg-orange-400": row.getValue("status") === "Processing",
+            "bg-green-400": row.getValue("status") === "Completed"
           })}
         >
           {row.getValue("status")}
